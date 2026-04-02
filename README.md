@@ -1,1 +1,17 @@
-# project-argus
+# PROJECT ARGUS
+
+As we have seen in the last 10 years, drones are being increasingly utilized by militaries all around the world. The consequences of this have been destructive on the livelihoods of both civilians and soldiers. One of the recent examples of this is the Russian-Ukrainian war and from the footage that is published by both sides online, it’s clear that drones are our era’s most destructive force that needs to be stopped.
+
+The weaponization of drones also poses a critical risk to civilian and military infrastructure all around the world due to their easy configurability and accessibility by non-state actors.
+
+However, the way to detect and intercept these low altitude drones with weak radar reflections cannot rely on $1B radar systems nor with costly, over-engineered interceptors or using complicated defense systems like Phalanx which costs billions to manufacture and millions to operate. This dilemma opens up a possibility for a new technology, using a swarm of defenses scattered over an area, on a low-cost, low-range optic based system like ARGUS.
+
+The math is unambiguous that using expensive radars, anti-air systems that take years to manufacture and cost billions in tax-payer money against an adversary who produces hundreds of $25k drones and causes significantly more destruction is simply inefficient. These systems also fail to hold their promise against swarms of drones as we have seen in March 2026 from the engagements in the Middle East with multiple American anti-air and radar systems destroyed at embassies and military bases.
+
+The main problem with these high-tech systems being used against adversaries who use primitive technology isn’t only financial. For an adversary nation or a non-state actor to successfully destroy billions of dollars worth of equipment is a symbol of their victory that they could actually do it. It increases their morale and provides them with a huge amount of propaganda material, which gives them a basis to keep their authority and get the support of their people as we have seen lately. On the contrary, a low-cost, low range system produced in tens of thousands and deployed in a wide range of areas, when destroyed, doesn’t provide a morale boost or a sense of achievement.
+
+Recently, many modern militaries woke up to the reality of the weaknesses of their over engineered systems and started trying to develop and adapt simple systems. One of the recent examples of this is the LUCAS developed by the US by reverse engineering Iranian Shahed-136 drones that cost around $30k. The drastic difference between the typical drones that the US uses like MQ-9 Reaper or RQ-4 Global Hawk, which range from $30M to $220M per unit, makes it clear why and how the trend will continue to spread all around the world.
+
+Project ARGUS aims to develop a low-cost but highly efficient optical tracking system on completely deterministic hardware with its custom Steady-State or Linear Kalman Filter. Unlike traditional C-UAS systems, ARGUS will be quickly deployable even by untrained infantry on the battlefield in a matter of minutes and will be extremely easy to manufacture and assemble.
+
+The full technical details of Project ARGUS and the next prototypes will be completely private due to dual-use potential. The first prototype, X-1, is the only exception in this regard, since it’s built entirely from commercially available components and simple software.
