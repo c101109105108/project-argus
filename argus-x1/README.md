@@ -1,6 +1,6 @@
 # ARGUS X-1
 
-ARGUS X-1, with only a $300 budget, exceeded my expectations and performed exceptionally well in its first baseline performance test. The test was done under optimal indoor conditions with fixed exposure at 150, a high-contrast red LED target under green ambient lighting, without a Kalman filter. Three deliberate reacquisitions were successfully made and the system operated continuously.
+X-1, with only a $300 budget, exceeded my expectations and performed exceptionally well in its first baseline performance test. The test was done under optimal indoor conditions with fixed exposure at 150, a high-contrast red LED target under green ambient lighting, without a Kalman filter. Three deliberate reacquisitions were successfully made and the system operated continuously.
 
 ### Performance Metrics
 
