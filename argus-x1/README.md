@@ -1,5 +1,7 @@
 # ARGUS X-1
 
+This repository contains only the state machine and header files of ARGUS X-1. The full implementation will not be shared until next year due to potential academic publication.
+
 X-1, with only a $300 budget, exceeded my expectations and performed exceptionally well in its first baseline performance test. The test was done under optimal indoor conditions with fixed exposure at 150, a high-contrast red LED target under green ambient lighting, without a Kalman filter. Three deliberate reacquisitions were successfully made and the system operated continuously.
 
 ### Performance Metrics
