@@ -2,9 +2,17 @@
 
 This repository contains only the state machine and header files of ARGUS X-1. The full implementation will not be shared until next year due to potential academic publication.
 
-X-1, with only a $300 budget, exceeded my expectations and performed exceptionally well in its first baseline performance test. The test was done under optimal indoor conditions with fixed exposure at 150, a high-contrast red LED target under green ambient lighting, without a Kalman filter. Three deliberate reacquisitions were successfully made and the system operated continuously.
+## Baseline Performance Test
 
-### Performance Metrics
+Test Conditions:
+
+- Resolution: 640x400
+- Rate: Limited to 60 FPS
+- Exposure: Fixed (150)
+- Target: High-contrast red LED under green ambient light
+- Processing: No Kalman Filter or Estimation (Raw Data)
+
+### Metrics
 
 | Metric                         | Value                          |
 |--------------------------------|--------------------------------|
@@ -18,3 +26,7 @@ X-1, with only a $300 budget, exceeded my expectations and performed exceptional
 | Median absolute error          | 4.93 px / 5.28 px              |
 | Time to first acquisition      | 0.313 s                        |
 | Settle time                    | 0.117 s                        |
+
+Physically, the Y-axis servo has a manufacturing defect, some critical components are held together with double-sided tape, and the camera's unnecessarily long platform introduces extra inertia. On the software side, there are flaws in the control logic causing derivative and integral corruption near the deadzone boundary, which produce an unwanted deadband near the setpoint andd interfere with the overall control behavior. Additionally, since I placed the camera upside down I had to use 'cv::flip(data.gray, data.gray, -1)' to compensate but I am not certain whether this interferes with anything in the control loop.
+
+Even under these constraints, X-1 successfully handled three deliberate reacquisitions without interruption and exceeded my expectations despite its current limitations.
