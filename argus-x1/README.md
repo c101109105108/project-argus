@@ -30,3 +30,17 @@ Test Conditions:
 At the time of this test, the system still isn't perfect. The Y-axis servo has a manufacturing defect, some critical components are held together with double-sided tape, and the camera's unnecessarily long platform introduces extra inertia. On the software side, there are flaws in the control logic causing derivative and integral corruption near the deadzone boundary, which produce an unwanted deadband near the setpoint and interfere with the overall control behavior. Additionally, since I placed the camera upside down I had to use `cv::flip(data.gray, data.gray, -1)` to compensate but I am not certain whether this interferes with anything in the control loop yet.
 
 Even under these constraints, X-1 successfully handled three deliberate reacquisitions without interruption, operated continuously, and exceeded my expectations despite its current limitations.
+
+| Metric                         | Value                          |
+|--------------------------------|--------------------------------|
+| Closed-loop update rate        | 60.0 Hz                        |
+| Jitter (1σ)                    | 1.323 ms                       |
+| Tracking uptime                | 99.88% over 84.34 s            |
+| RMS error (X/Y)                | 10.06 px / 7.68 px             |
+| Mean bias (X/Y)                | -0.068 px / -0.377 px          |
+| Occlusion recoveries           | None                           |
+| 95th percentile absolute error | 20.15 px / 11.70 px            |
+| Median absolute error          | 5.31 px / 4.16 px              |
+| Time to first acquisition      | 0.289 s                        |
+| Settle time                    | 0.135 s                        |
+
